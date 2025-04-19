@@ -2,50 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About - mAIques Lab</title>
+  <title>About – mAIques Lab</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  
-<style>
-  body {
-    background-color: #000;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-  }
-  header, footer {
-    background-color: #111;
-    padding: 1.5rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #222;
-  }
-  nav a {
-    color: white;
-    margin-left: 1rem;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  nav a:hover {
-    color: #00d8d8;
-  }
-  section {
-    padding: 4rem 2rem;
-    max-width: 1000px;
-    margin: auto;
-  }
-  h1, h2 {
-    color: #00d8d8;
-  }
-  .highlight {
-    color: #f0c800;
-  }
-</style>
-
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #111;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #00d8d8;
+    }
+    .hero {
+      background-image: url('matrix_collage_refined.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 2px 2px 6px #000;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: #ccc;
+      max-width: 700px;
+      margin: 1rem auto 0;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #00d8d8;
+      margin-bottom: 1rem;
+    }
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .pillar {
+      background-color: #111;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    .pillar h3 {
+      margin-top: 0;
+      color: #f0c800;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+  </style>
 </head>
 <body>
-  
+
 <header>
   <img src="Logo.png" alt="mAIques Lab Logo" style="height: 60px;">
   <nav>
@@ -61,15 +97,67 @@
   </nav>
 </header>
 
-  <section>
-    <h2>About <span class="highlight">mAIques Lab</span></h2>
-    <p>Led by Dr. Oscar Maiques, the mAIques Lab investigates how extracellular matrix (ECM) structure and alignment influence cancer initiation, progression, and therapy response.</p>
-    <p>We integrate artificial intelligence with spatial omics, 3D organotypic models, and patient-derived data to uncover fundamental principles of tumor biology and translate them into diagnostic and therapeutic innovations.</p>
-  </section>
-  
+<section class="hero">
+  <h1>mAIques Lab</h1>
+  <p>Decoding the structural and spatial complexity of the extracellular matrix (ECM) to enable earlier cancer detection and personalized therapies through spatial omics and AI.</p>
+</section>
+
+<section>
+  <h2>Lab Overview</h2>
+  <p>The mAIques Lab, led by Dr. Oscar Maiques, investigates how changes in ECM alignment and architecture drive cancer progression. We combine spatial transcriptomics, imaging mass cytometry, AI-based tissue analysis, and advanced 3D models to identify early transformation signatures in melanoma, pancreatic, and breast cancer.</p>
+  <p>Our work bridges fundamental discovery with translational application, seeking to reveal how the microenvironment primes malignancy.</p>
+</section>
+
+<section>
+  <h2>Core Scientific Pillars</h2>
+  <div class="pillars">
+    <div class="pillar">
+      <h3>Innovation</h3>
+      <p>We adopt and develop cutting-edge tools in spatial biology and machine learning.</p>
+    </div>
+    <div class="pillar">
+      <h3>Precision</h3>
+      <p>Our goal is to understand tumor heterogeneity and microenvironment dynamics at single-cell resolution.</p>
+    </div>
+    <div class="pillar">
+      <h3>Collaboration</h3>
+      <p>We work across disciplines and institutions to enhance clinical relevance.</p>
+    </div>
+    <div class="pillar">
+      <h3>Impact</h3>
+      <p>Our research informs diagnostics, prognostics, and future therapeutic strategies.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Location & Institutional Context</h2>
+  <p>The mAIques Lab is based at the Centre for Cancer Biomarkers & Biotherapeutics within the Barts Cancer Institute at Queen Mary University of London.</p>
+  <p>We are part of the CRUK City of London Centre network, which brings together leading institutions for cancer research across London.</p>
+  <ul>
+    <li><a href="https://www.bci.qmul.ac.uk/barts-cancer-institute/centre-for-biomarkers-biotherapeutics/" target="_blank">Centre for Cancer Biomarkers & Biotherapeutics</a></li>
+    <li><a href="https://www.bci.qmul.ac.uk/" target="_blank">Barts Cancer Institute</a></li>
+    <li><a href="https://www.colcc.ac.uk/" target="_blank">City of London Centre</a></li>
+    <li><a href="https://www.qmul.ac.uk/" target="_blank">Queen Mary University of London</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Vision</h2>
+  <p>We envision a future where spatial and mechanical features of the tumour microenvironment become routine clinical biomarkers. Our aim is to redefine early detection by capturing subtle changes in ECM and cell–cell interactions, powered by interpretable AI models. Ultimately, we want to shift the diagnostic paradigm toward spatially informed precision medicine.</p>
+</section>
+
+<section>
+  <h2>Timeline</h2>
+  <ul>
+    <li><strong>April 2024</strong> – Lab established under the Barts Precision Medicine Programme.</li>
+  </ul>
+</section>
+
 <footer>
   <p>&copy; 2025 mAIques Lab. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
+
