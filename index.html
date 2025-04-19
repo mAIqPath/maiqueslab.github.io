@@ -11,45 +11,100 @@
       font-family: 'Inter', sans-serif;
       background-color: #000;
       color: white;
+      line-height: 1.6;
     }
     header {
-      background-color: #111;
-      padding: 1rem 2rem;
+      background-color: #000;
+      padding: 1.5rem 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      border-bottom: 1px solid #222;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header img {
-      height: 50px;
+      height: 80px;
     }
     nav a {
       color: white;
-      margin-left: 1rem;
+      margin-left: 1.5rem;
       text-decoration: none;
       font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00d8d8;
     }
     section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
+      padding: 6rem 2rem;
+      max-width: 1200px;
       margin: auto;
     }
     h1, h2 {
       color: #00d8d8;
+      font-weight: 600;
     }
     .highlight {
       color: #f0c800;
+    }
+    .hero {
+      text-align: center;
+      padding: 8rem 2rem 4rem;
+      background: radial-gradient(ellipse at center, #111 0%, #000 100%);
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: #bbb;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      max-width: 300px;
+      height: auto;
+      border: 2px solid #222;
+      border-radius: 10px;
+    }
+    .funding-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .funding-logos img {
+      height: 60px;
+      filter: brightness(1.2);
     }
     footer {
       background-color: #111;
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+    a {
+      color: #00d8d8;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="mAIques Lab Logo">
+    <img src="Logo.png" alt="mAIques Lab Logo">
     <nav>
       <a href="#about">About</a>
       <a href="#research">Research</a>
@@ -62,56 +117,64 @@
     </nav>
   </header>
 
-  <section id="hero">
+  <section class="hero">
     <h1>Welcome to <span class="highlight">mAIques Lab</span></h1>
-    <p>Decoding the Matrix of Cancer with AI and Spatial Biology</p>
+    <p>Decoding the Matrix of Cancer with AI, Spatial Biology, and Next-Generation 3D Models.</p>
   </section>
 
   <section id="about">
     <h2>About</h2>
-    <p>mAIques Lab is led by Dr. Oscar Maiques and investigates how extracellular matrix (ECM) structure and alignment influence cancer initiation, progression, and therapy response. We integrate AI with spatial omics and 3D models to uncover fundamental principles of tumor biology and translational applications.</p>
+    <p>Led by Dr. Oscar Maiques, the mAIques Lab investigates how extracellular matrix (ECM) structure and alignment influence cancer initiation, progression, and therapy response. We integrate artificial intelligence with spatial omics, 3D organotypic models, and patient-derived data to uncover fundamental principles of tumor biology and translate them into diagnostic and therapeutic innovations.</p>
   </section>
 
   <section id="research">
     <h2>Research</h2>
     <ul>
       <li>Early Detection of Melanoma, Pancreatic, and Breast Cancer</li>
-      <li>ECM Alignment & Mechanobiology</li>
-      <li>Spatial Transcriptomics and Imaging Mass Cytometry</li>
-      <li>Organoids, Human Skin Equivalents & 3D Modelling</li>
+      <li>ECM Alignment, Tissue Architecture & Mechanobiology</li>
+      <li>Spatial Transcriptomics, Imaging Mass Cytometry & Multiplexed Proteomics</li>
+      <li>3D Human Skin Equivalents, Organoids & Bioprinting</li>
     </ul>
   </section>
 
   <section id="team">
     <h2>Team</h2>
-    <p>Meet our interdisciplinary team of scientists, clinicians, and students dedicated to advancing spatial cancer biology.</p>
+    <p>We are an interdisciplinary team of scientists, engineers, clinicians, and students dedicated to reshaping cancer research through integrative and translational science.</p>
   </section>
 
   <section id="news">
     <h2>News</h2>
-    <p>Stay updated with our latest discoveries, preprints, media coverage, and lab achievements.</p>
+    <p>Stay updated with our latest discoveries, preprints, media coverage, conferences, and awards. Coming soon: our blog and highlights section!</p>
   </section>
 
   <section id="publications">
     <h2>Publications</h2>
-    <p>Read our most recent papers in Nature Communications, Cell Reports, and other high-impact journals.</p>
+    <p>Explore our contributions in high-impact journals. We highlight key graphical abstracts, cover art, and public preprints below.</p>
+    <div class="gallery">
+      <img src="cover1.jpg" alt="Publication Cover 1">
+      <img src="cover2.jpg" alt="Publication Cover 2">
+      <img src="cover3.jpg" alt="Publication Cover 3">
+    </div>
   </section>
 
   <section id="outreach">
     <h2>Outreach & Patient Involvement</h2>
-    <p>We believe in science for the people. Our lab is committed to patient engagement, school outreach, and open science practices.</p>
+    <p>We are committed to science that serves the public. We actively engage with patients, schools, and the community to communicate research, support citizen science, and promote equity in healthcare discovery and participation.</p>
   </section>
 
   <section id="funding">
-    <h2>Grants & Funding</h2>
-    <p>Our work is supported by generous funding from CRUK, UKRI, the Academy of Medical Sciences, and the European Commission.</p>
+    <h2>Funding</h2>
+    <p>We are proudly funded by <a href="https://www.bartscharity.org.uk/what-we-do/research/" target="_blank">Barts Charity</a> through the Precision Medicine Programme.</p>
+    <div class="funding-logos">
+      <img src="barts_charity_logo.png" alt="Barts Charity Logo">
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:o.maiques@qmul.ac.uk">o.maiques@qmul.ac.uk</a></p>
     <p>Queen Mary University of London</p>
-    <p>Follow us: Twitter | GitHub | ORCID</p>
+    <p>Follow us: <a href="#">Twitter</a> | <a href="#">GitHub</a> | <a href="#">ORCID</a></p>
   </section>
 
   <footer>
