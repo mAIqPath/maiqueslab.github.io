@@ -1,5 +1,149 @@
-<!DOCTYPE html><html lang="en">
-<head><meta charset="UTF-8"><title>Publications - mAIques Lab</title>
-<link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mAIques Lab – Publications</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #222;
+    }
+    header {
+      background-color: #000;
+      color: white;
+      padding: 1rem 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 3px solid #00d8d8;
+    }
+    header img {
+      height: 90px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #00d8d8;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .pub-section {
+      margin-top: 2rem;
+    }
+    .pub-section h2 {
+      font-size: 1.8rem;
+      border-left: 5px solid #00d8d8;
+      padding-left: 0.75rem;
+      color: #111;
+    }
+    .pub-entry {
+      margin-bottom: 1.5rem;
+    }
+    .pub-entry a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .pub-entry a:hover {
+      text-decoration: underline;
+    }
+    .thumb-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .thumb-gallery img {
+      width: 140px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  </style>
 </head>
-<body><h1>Publications</h1><p>Explore our scientific output.</p></body></html>
+<body>
+  <header>
+    <img src="logo.png" alt="Lab Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="team.html">Team</a>
+      <a href="news.html">News</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Publications</h1>
+    <p>Browse our key papers and research contributions. You can find all our work on <a href="https://scholar.google.es/citations?user=wE5p-pEAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
+
+    <div class="thumb-gallery">
+      <a href="https://doi.org/10.1038/s41591-024-02999-9" target="_blank"><img src="cover1.jpg" alt="Paper 1"></a>
+      <a href="https://doi.org/10.1016/j.tcb.2021.03.003" target="_blank"><img src="cover2.jpg" alt="Paper 2"></a>
+      <a href="https://doi.org/10.1152/physrev.00026.2020" target="_blank"><img src="cover3.jpg" alt="Paper 3"></a>
+      <a href="https://doi.org/10.1016/j.xpro.2022.101377" target="_blank"><img src="cover4.jpg" alt="Paper 4"></a>
+    </div>
+
+    <div class="pub-section">
+      <h2>Artificial Intelligence in Cancer Research</h2>
+      <div class="pub-entry">
+        A systematic pan-cancer study on deep learning-based prediction of molecular profiles from histopathology images.<br>
+        <em>Nature Communications</em>, 2024. <a href="https://doi.org/10.1038/s41591-024-02999-9" target="_blank">Read the paper</a>
+      </div>
+    </div>
+
+    <div class="pub-section">
+      <h2>Reviews on Tumor Plasticity</h2>
+      <div class="pub-entry">
+        The amoeboid state as part of the epithelial-to-mesenchymal transition programme.<br>
+        <em>Trends in Cell Biology</em>, 2021. <a href="https://doi.org/10.1016/j.tcb.2021.03.003" target="_blank">Read the paper</a>
+      </div>
+      <div class="pub-entry">
+        Rho GTPase signaling in cancer progression and dissemination.<br>
+        <em>Physiological Reviews</em>, 2021. <a href="https://doi.org/10.1152/physrev.00026.2020" target="_blank">Read the paper</a>
+      </div>
+    </div>
+
+    <div class="pub-section">
+      <h2>Protocols</h2>
+      <div class="pub-entry">
+        Multiplex chromogenic immunohistochemistry to stain and analyze paraffin tissue sections from the mouse or human.<br>
+        <em>STAR Protocols</em>, 2022. <a href="https://doi.org/10.1016/j.xpro.2022.101377" target="_blank">Read the paper</a>
+      </div>
+    </div>
+
+    <div class="pub-section">
+      <h2>Amoeboid Cancer Cells in Other Tumors</h2>
+      <div class="pub-entry">
+        CD73 controls Myosin II–driven invasion, metastasis, and immunosuppression in amoeboid pancreatic cancer cells.<br>
+        <em>Science Advances</em>, 2023. <a href="#">Read the paper</a>
+      </div>
+      <div class="pub-entry">
+        Downregulation of EGFR facilitates TGF-β-induced epithelial to amoeboid transition.<br>
+        <em>Cancer Letters</em>, 2019. <a href="#">Read the paper</a>
+      </div>
+      <div class="pub-entry">
+        WNT11-FZD7-DAAM1 signalling supports tumour initiating abilities and melanoma amoeboid invasion.<br>
+        <em>Nature Communications</em>, 2020. <a href="#">Read the paper</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
