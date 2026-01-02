@@ -1,117 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Publications – mAIques Lab</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; margin: 0; background: #fff; color: #222; line-height: 1.6; }
-        header, footer { background-color: #000; color: white; padding: 1rem; text-align: center; }
-        nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: 500; }
-        nav a:hover { color: #00d8d8; }
-        section { max-width: 1000px; margin: auto; padding: 2rem 1.5rem; }
-        h1, h2 { color: #00b8b8; text-align: center; }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1.2rem;
-            margin: 3rem 0 2rem;
-        }
-        .gallery a {
-            flex: 1 0 150px;
-            max-width: 150px;
-        }
-        .gallery img {
-            width: 100%;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            transition: transform 0.3s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        .pub {
-            margin-bottom: 2.5rem;
-            text-align: center;
-        }
-        .pub img {
-            max-width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            margin-bottom: 0.8rem;
-            transition: transform 0.3s;
-        }
-        .pub img:hover {
-            transform: scale(1.02);
-        }
-        .pub-title { font-weight: bold; font-size: 1.1rem; margin: 0.5rem 0; }
-        .pub-journal { font-style: italic; color: #555; }
-        .pub-doi a { color: #007d7d; font-size: 0.95rem; }
-        .external-link { text-align: center; margin-top: 2rem; }
-        .external-link a { color: #007d7d; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selected publications from the mAIques Lab across spatial biology, AI, and cancer research." />
+  <title>Publications | mAIques Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="team.html">Team</a>
-        <a href="news.html">News</a>
-        <a href="publications.html">Publications</a>
-        <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <a class="brand-link" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="mAIques Lab logo" />
+      <div>
+        <span class="brand-name">mAIques Lab</span>
+        <span class="brand-tagline">Spatial biology, 3D models, AI</span>
+      </div>
+    </a>
+    <nav class="site-nav">
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="team.html">Team</a>
+      <a href="news.html">News</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
     </nav>
-</header>
+  </header>
 
-<section>
-    <h1>Publications</h1>
-    <p class="external-link">View all publications on <a href="https://scholar.google.es/citations?user=wE5p-pEAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
+  <main class="page">
+    <section class="section">
+      <h1 class="section-title">Publications</h1>
+      <p class="section-subtitle">Selected papers highlighting our work across spatial biology, ECM dynamics, and AI for oncology.</p>
+      <p>View the full list on <a href="https://scholar.google.es/citations?user=wE5p-pEAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>.</p>
+    </section>
 
-    <h2>Selected Publications</h2>
-    <div class="gallery">
-        <a href="https://www.nature.com/articles/s41467-025-56299-7" target="_blank"><img src="images/publication_1.png" alt="Nature Communications 2025"></a>
-        <a href="https://www.nature.com/articles/s41556-022-01042-3" target="_blank"><img src="images/publication_2.png" alt="Nature Cell Biology"></a>
-        <a href="https://www.nature.com/articles/s41416-021-01442-6" target="_blank"><img src="images/publication_3.png" alt="British Journal of Cancer"></a>
-        <a href="https://www.nature.com/articles/s41467-020-18951-2" target="_blank"><img src="images/publication_4.png" alt="Nature Communications WNT11"></a>
-        <a href="https://www.cell.com/cancer-cell/fulltext/S1535-6108(19)30573-2" target="_blank"><img src="images/publication_5.png" alt="Cancer Cell"></a>
-        <a href="https://www.cell.com/cell/fulltext/S0092-8674(18)31652-0" target="_blank"><img src="images/publication_6.png" alt="Cell"></a>
-    </div>
+    <section class="section">
+      <h2 class="section-title">Selected publications</h2>
+      <div class="publication-grid">
+        <a href="https://www.nature.com/articles/s41467-025-56299-7" target="_blank" rel="noreferrer"><img src="images/publication_1.png" alt="Nature Communications 2025" /></a>
+        <a href="https://www.nature.com/articles/s41556-022-01042-3" target="_blank" rel="noreferrer"><img src="images/publication_2.png" alt="Nature Cell Biology" /></a>
+        <a href="https://www.nature.com/articles/s41416-021-01442-6" target="_blank" rel="noreferrer"><img src="images/publication_3.png" alt="British Journal of Cancer" /></a>
+        <a href="https://www.nature.com/articles/s41467-020-18951-2" target="_blank" rel="noreferrer"><img src="images/publication_4.png" alt="Nature Communications WNT11" /></a>
+        <a href="https://www.cell.com/cancer-cell/fulltext/S1535-6108(19)30573-2" target="_blank" rel="noreferrer"><img src="images/publication_5.png" alt="Cancer Cell" /></a>
+        <a href="https://www.cell.com/cell/fulltext/S0092-8674(18)31652-0" target="_blank" rel="noreferrer"><img src="images/publication_6.png" alt="Cell" /></a>
+      </div>
+    </section>
 
-    <h2>Artificial Intelligence in Cancer Research</h2>
-    <p><strong>A systematic pan-cancer study on deep learning-based prediction of molecular profiles from histopathology images</strong><br>
-    Communications Medicine, 2024<br>
-    <a href="https://www.nature.com/articles/s43856-024-00471-5" target="_blank">Read the paper</a></p>
+    <section class="section">
+      <h2 class="section-title">Artificial intelligence in cancer research</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>A systematic pan-cancer study on deep learning-based prediction of molecular profiles from histopathology images</h3>
+          <p>Communications Medicine, 2024</p>
+          <a href="https://www.nature.com/articles/s43856-024-00471-5" target="_blank" rel="noreferrer">Read the paper</a>
+        </div>
+      </div>
+    </section>
 
-    <h2>Reviews on Tumor Plasticity</h2>
-    <p><strong>The amoeboid state as part of the epithelial-to-mesenchymal transition programme</strong><br>
-    Trends in Cell Biology, 2021<br>
-    <a href="https://www.cell.com/trends/cell-biology/pdf/S0962-8924%2821%2900206-3.pdf" target="_blank">Read the paper</a></p>
+    <section class="section">
+      <h2 class="section-title">Reviews on tumor plasticity</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>The amoeboid state as part of the epithelial-to-mesenchymal transition programme</h3>
+          <p>Trends in Cell Biology, 2021</p>
+          <a href="https://www.cell.com/trends/cell-biology/pdf/S0962-8924%2821%2900206-3.pdf" target="_blank" rel="noreferrer">Read the paper</a>
+        </div>
+        <div class="card">
+          <h3>Rho GTPase signaling in cancer progression and dissemination</h3>
+          <p>Physiological Reviews, 2021</p>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/34541899/" target="_blank" rel="noreferrer">Read the paper</a>
+        </div>
+      </div>
+    </section>
 
-    <p><strong>Rho GTPase signaling in cancer progression and dissemination</strong><br>
-    Physiological Reviews, 2021<br>
-    <a href="https://pubmed.ncbi.nlm.nih.gov/34541899/" target="_blank">Read the paper</a></p>
+    <section class="section">
+      <h2 class="section-title">Protocols</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Multiplex chromogenic immunohistochemistry to stain and analyze paraffin tissue sections</h3>
+          <p>STAR Protocols, 2022</p>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/36595909/" target="_blank" rel="noreferrer">Read the paper</a>
+        </div>
+      </div>
+    </section>
 
-    <h2>Protocols</h2>
-    <p><strong>Multiplex chromogenic immunohistochemistry to stain and analyze paraffin tissue sections</strong><br>
-    STAR Protocols, 2022<br>
-    <a href="https://pubmed.ncbi.nlm.nih.gov/36595909/" target="_blank">Read the paper</a></p>
+    <section class="section">
+      <h2 class="section-title">Amoeboid cancer cells in various tumors</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>CD73 controls Myosin II-driven invasion in pancreatic cancer</h3>
+          <p>Science Advances, 2023</p>
+          <a href="https://www.science.org/doi/10.1126/sciadv.adi0244" target="_blank" rel="noreferrer">Read the paper</a>
+        </div>
+        <div class="card">
+          <h3>EGFR downregulation facilitates TGF-beta-induced amoeboid transition in hepatocellular carcinoma</h3>
+          <p>Cancer Letters, 2019</p>
+          <a href="https://www.sciencedirect.com/science/article/pii/S0304383519303934" target="_blank" rel="noreferrer">Read the paper</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <h2>Amoeboid Cancer Cells in Various Tumors</h2>
-    <p><strong>CD73 controls Myosin II–driven invasion in pancreatic cancer</strong><br>
-    Science Advances, 2023<br>
-    <a href="https://www.science.org/doi/10.1126/sciadv.adi0244" target="_blank">Read the paper</a></p>
-
-    <p><strong>EGFR downregulation facilitates TGF-β-induced amoeboid transition in hepatocellular carcinoma</strong><br>
-    Cancer Letters, 2019<br>
-    <a href="https://www.sciencedirect.com/science/article/pii/S0304383519303934" target="_blank">Read the paper</a></p>
-</section>
-
-<footer>
+  <footer class="site-footer">
     &copy; 2025 mAIques Lab. All rights reserved.
-</footer>
-
+  </footer>
 </body>
 </html>

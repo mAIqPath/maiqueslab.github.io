@@ -3,72 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mAIques Lab</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #333;
-    }
-    header {
-      background-color: #000;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 3px solid #00d8d8;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-    .logo img {
-      height: 80px;
-      margin-right: 1rem;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00d8d8;
-    }
-    .hero {
-      text-align: center;
-      padding: 5rem 2rem 3rem 2rem;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.3rem;
-      color: #555;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #f2f2f2;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+  <meta name="description" content="mAIques Lab investigates spatial biology and AI to decode the extracellular matrix and improve cancer detection." />
+  <title>mAIques Lab | Spatial Biology and AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="mAIques Lab Logo">
-    </div>
-    <nav>
+  <header class="site-header">
+    <a class="brand-link" href="index.html">
+      <img class="brand-logo" src="logo.png" alt="mAIques Lab logo" />
+      <div>
+        <span class="brand-name">mAIques Lab</span>
+        <span class="brand-tagline">Spatial biology, 3D models, AI</span>
+      </div>
+    </a>
+    <nav class="site-nav">
       <a href="about.html">About</a>
       <a href="research.html">Research</a>
       <a href="team.html">Team</a>
@@ -78,12 +29,71 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to the mAIques Lab</h1>
-    <p>Decoding the Matrix of Cancer through Spatial Biology and Artificial Intelligence.</p>
-  </section>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <span class="pill">Spatial omics + AI</span>
+        <h1>Decoding the extracellular matrix to reveal early cancer signals.</h1>
+        <p>We blend spatial biology, 3D tissue models, and machine learning to map how the tumor microenvironment evolves and to build clinically actionable biomarkers.</p>
+        <div class="button-row">
+          <a class="button primary" href="research.html">Explore research</a>
+          <a class="button secondary" href="contact.html">Collaborate</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>At a glance</h3>
+        <p>We focus on ECM remodeling, immune dynamics, and AI-powered histopathology to enable precision oncology.</p>
+        <div class="button-row">
+          <a class="button secondary" href="publications.html">Recent papers</a>
+        </div>
+      </div>
+    </section>
 
-  <footer>
+    <section class="section">
+      <h2 class="section-title">Research focus</h2>
+      <p class="section-subtitle">Key themes that shape our lab program and collaborations.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>ECM dynamics</h3>
+          <p>We study how matrix architecture and mechanics drive tumor progression and therapy resistance.</p>
+        </div>
+        <div class="card">
+          <h3>Spatial tissue profiling</h3>
+          <p>Our workflows integrate spatial omics, multiplex imaging, and single-cell analysis.</p>
+        </div>
+        <div class="card">
+          <h3>AI for pathology</h3>
+          <p>We build interpretable ML models that connect image phenotypes to molecular programs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Latest highlights</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">2025</span>
+          <strong>New spatial ECM atlas project launched</strong>
+          <p>We are building a multi-modal atlas of ECM remodeling in early-stage tumors.</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2025</span>
+          <strong>Lab recruiting</strong>
+          <p>Open positions for computational and experimental trainees. Contact us to learn more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2 class="section-title">Work with us</h2>
+        <p>We welcome collaborations across pathology, oncology, spatial biology, and data science.</p>
+        <a class="button primary" href="contact.html">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     &copy; 2025 mAIques Lab. All rights reserved.
   </footer>
 </body>
