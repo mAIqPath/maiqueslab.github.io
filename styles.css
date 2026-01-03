@@ -1,15 +1,15 @@
 :root {
-  --background: #f7f7f9;
+  --background: #f7f4ef;
   --surface: #ffffff;
   --surface-strong: #f1f2f6;
-  --border: #e3e5ea;
-  --text: #121317;
-  --text-muted: #4b5563;
+  --border: #e7e2da;
+  --text: #0b0b0d;
+  --text-muted: #5a5f6b;
   --text-inverse: #f5f5f7;
   --accent: #22d3ee;
   --accent-soft: rgba(34, 211, 238, 0.14);
   --accent-alt: #84cc16;
-  --shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  --shadow: 0 18px 40px rgba(12, 10, 9, 0.12);
   --font-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
   --font-display: "Barlow Condensed", "Space Grotesk", "Trebuchet MS", sans-serif;
 }
@@ -21,10 +21,7 @@
 body {
   margin: 0;
   font-family: var(--font-body);
-  background:
-    radial-gradient(900px 360px at 10% -10%, rgba(34, 211, 238, 0.12), transparent 70%),
-    radial-gradient(640px 360px at 90% 0%, rgba(132, 204, 22, 0.12), transparent 70%),
-    var(--background);
+  background: var(--background);
   color: var(--text);
   line-height: 1.7;
 }
@@ -43,11 +40,26 @@ a:hover {
   color: var(--accent);
 }
 
-.site-header {
-  background: rgba(11, 11, 13, 0.9);
+.promo-bar {
+  background: #0b0b0d;
   color: var(--text-inverse);
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.promo-bar a {
+  color: var(--text-inverse);
+  border-bottom: 1px solid rgba(245, 245, 247, 0.45);
+}
+
+.site-header {
+  background: rgba(247, 244, 239, 0.9);
+  color: var(--text);
   border-bottom: 1px solid var(--border);
-  padding: 1.4rem 3vw;
+  padding: 1.6rem 3vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,20 +82,20 @@ a:hover {
   width: 68px;
   height: 68px;
   object-fit: contain;
-  filter: drop-shadow(0 0 18px rgba(34, 211, 238, 0.2));
+  filter: drop-shadow(0 0 12px rgba(34, 211, 238, 0.18));
 }
 
 .brand-name {
   font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .brand-tagline {
   display: block;
-  color: rgba(245, 245, 247, 0.65);
+  color: var(--text-muted);
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -92,14 +104,14 @@ a:hover {
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
-  font-size: 0.9rem;
+  gap: 1.4rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
 }
 
 .site-nav a {
-  color: var(--text-inverse);
+  color: var(--text);
   font-weight: 600;
 }
 
@@ -120,13 +132,14 @@ a:hover {
 .hero--full {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  padding: 5rem 6vw 4rem;
+  padding: 6rem 6vw 5rem;
   background:
-    radial-gradient(600px 300px at 20% -10%, rgba(34, 211, 238, 0.16), transparent 70%),
-    radial-gradient(800px 300px at 80% 0%, rgba(132, 204, 22, 0.12), transparent 70%),
-    #0b0b0d;
+    radial-gradient(900px 360px at 10% -10%, rgba(34, 211, 238, 0.16), transparent 70%),
+    radial-gradient(820px 360px at 90% 0%, rgba(132, 204, 22, 0.12), transparent 70%),
+    var(--background);
   border-bottom: 1px solid var(--border);
-  color: var(--text-inverse);
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-inner {
@@ -135,30 +148,32 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   align-items: center;
-  gap: 2.8rem;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.8rem, 5vw, 4.8rem);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin: 0 0 1rem;
+  font-size: clamp(2.8rem, 6vw, 5.2rem);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  margin: 0 0 1.2rem;
 }
 
 .hero p {
-  color: rgba(245, 245, 247, 0.75);
+  color: var(--text-muted);
   font-size: 1.15rem;
   margin-bottom: 2rem;
 }
 
 .hero-card {
-  background: rgba(18, 19, 24, 0.9);
-  border: 1px solid #24262b;
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 18px;
   padding: 1.8rem;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
-  color: var(--text-inverse);
+  box-shadow: var(--shadow);
+  color: var(--text);
 }
 
 .button-row {
@@ -174,7 +189,7 @@ a:hover {
   padding: 0.7rem 1.4rem;
   border-radius: 999px;
   font-weight: 600;
-  border: 1px solid var(--border);
+  border: 1px solid var(--text);
   color: var(--text);
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -183,8 +198,8 @@ a:hover {
 }
 
 .button.primary {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--text);
+  color: var(--text);
 }
 
 .button.secondary {
@@ -194,18 +209,26 @@ a:hover {
 
 .button:hover {
   transform: translateY(-2px);
-  background: var(--accent);
-  color: #0b0b0d;
+  background: var(--text);
+  color: var(--text-inverse);
   border-color: transparent;
 }
 
-.hero--full .button {
-  border-color: rgba(245, 245, 247, 0.28);
-  color: var(--text-inverse);
-}
-
-.hero--full .button.secondary {
-  color: rgba(245, 245, 247, 0.75);
+.hero-visual {
+  position: absolute;
+  right: 8%;
+  top: 12%;
+  width: min(520px, 70vw);
+  height: min(520px, 70vw);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0) 48%),
+    radial-gradient(circle at 25% 20%, rgba(34, 211, 238, 0.65), rgba(34, 211, 238, 0) 55%),
+    radial-gradient(circle at 70% 30%, rgba(255, 177, 240, 0.7), rgba(255, 177, 240, 0) 58%),
+    radial-gradient(circle at 60% 70%, rgba(132, 204, 22, 0.45), rgba(132, 204, 22, 0) 55%);
+  filter: blur(0.5px);
+  opacity: 0.9;
+  z-index: 0;
 }
 
 .section {
@@ -214,9 +237,9 @@ a:hover {
 
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(1.9rem, 2.8vw, 2.6rem);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
+  font-size: clamp(1.9rem, 2.6vw, 2.6rem);
+  text-transform: none;
+  letter-spacing: 0.04em;
   margin: 0 0 1rem;
 }
 
@@ -249,7 +272,7 @@ a:hover {
   align-items: center;
   border-radius: 999px;
   padding: 0.25rem 0.7rem;
-  background: rgba(34, 211, 238, 0.22);
+  background: rgba(34, 211, 238, 0.16);
   color: var(--accent);
   font-weight: 600;
   font-size: 0.85rem;
@@ -330,8 +353,8 @@ a:hover {
 
 .outline-text {
   color: transparent;
-  -webkit-text-stroke: 1px var(--accent);
-  text-shadow: 0 0 18px rgba(34, 211, 238, 0.18);
+  -webkit-text-stroke: 1px rgba(34, 211, 238, 0.7);
+  text-shadow: 0 0 12px rgba(34, 211, 238, 0.18);
 }
 
 .reveal {
