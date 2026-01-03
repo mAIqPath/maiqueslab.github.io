@@ -1,14 +1,15 @@
 :root {
-  --background: #0b0b0d;
-  --surface: #121318;
-  --surface-strong: #181a21;
-  --border: #24262b;
-  --text: #f5f5f7;
-  --text-muted: #a1a1aa;
+  --background: #f7f7f9;
+  --surface: #ffffff;
+  --surface-strong: #f1f2f6;
+  --border: #e3e5ea;
+  --text: #121317;
+  --text-muted: #4b5563;
+  --text-inverse: #f5f5f7;
   --accent: #22d3ee;
-  --accent-soft: rgba(34, 211, 238, 0.18);
+  --accent-soft: rgba(34, 211, 238, 0.14);
   --accent-alt: #84cc16;
-  --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  --shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
   --font-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
   --font-display: "Barlow Condensed", "Space Grotesk", "Trebuchet MS", sans-serif;
 }
@@ -20,7 +21,10 @@
 body {
   margin: 0;
   font-family: var(--font-body);
-  background: var(--background);
+  background:
+    radial-gradient(900px 360px at 10% -10%, rgba(34, 211, 238, 0.12), transparent 70%),
+    radial-gradient(640px 360px at 90% 0%, rgba(132, 204, 22, 0.12), transparent 70%),
+    var(--background);
   color: var(--text);
   line-height: 1.7;
 }
@@ -41,7 +45,7 @@ a:hover {
 
 .site-header {
   background: rgba(11, 11, 13, 0.9);
-  color: var(--text);
+  color: var(--text-inverse);
   border-bottom: 1px solid var(--border);
   padding: 1.4rem 3vw;
   display: flex;
@@ -79,7 +83,7 @@ a:hover {
 
 .brand-tagline {
   display: block;
-  color: var(--text-muted);
+  color: rgba(245, 245, 247, 0.65);
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -95,7 +99,7 @@ a:hover {
 }
 
 .site-nav a {
-  color: var(--text);
+  color: var(--text-inverse);
   font-weight: 600;
 }
 
@@ -122,6 +126,7 @@ a:hover {
     radial-gradient(800px 300px at 80% 0%, rgba(132, 204, 22, 0.12), transparent 70%),
     #0b0b0d;
   border-bottom: 1px solid var(--border);
+  color: var(--text-inverse);
 }
 
 .hero-inner {
@@ -142,17 +147,18 @@ a:hover {
 }
 
 .hero p {
-  color: var(--text-muted);
+  color: rgba(245, 245, 247, 0.75);
   font-size: 1.15rem;
   margin-bottom: 2rem;
 }
 
 .hero-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: rgba(18, 19, 24, 0.9);
+  border: 1px solid #24262b;
   border-radius: 18px;
   padding: 1.8rem;
-  box-shadow: var(--shadow);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  color: var(--text-inverse);
 }
 
 .button-row {
@@ -191,6 +197,15 @@ a:hover {
   background: var(--accent);
   color: #0b0b0d;
   border-color: transparent;
+}
+
+.hero--full .button {
+  border-color: rgba(245, 245, 247, 0.28);
+  color: var(--text-inverse);
+}
+
+.hero--full .button.secondary {
+  color: rgba(245, 245, 247, 0.75);
 }
 
 .section {
@@ -234,7 +249,7 @@ a:hover {
   align-items: center;
   border-radius: 999px;
   padding: 0.25rem 0.7rem;
-  background: var(--accent-soft);
+  background: rgba(34, 211, 238, 0.22);
   color: var(--accent);
   font-weight: 600;
   font-size: 0.85rem;
@@ -250,7 +265,7 @@ a:hover {
 
 .theme-grid img {
   border-radius: 12px;
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.18);
   border: 1px solid var(--border);
 }
 
@@ -305,7 +320,7 @@ a:hover {
 }
 
 .site-footer {
-  background: var(--background);
+  background: var(--surface);
   color: var(--text-muted);
   text-align: center;
   padding: 2rem 1rem;
