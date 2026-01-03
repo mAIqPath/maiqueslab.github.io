@@ -56,8 +56,8 @@ a:hover {
 }
 
 .site-header {
-  background: rgba(247, 244, 239, 0.9);
-  color: var(--text);
+  background: rgba(11, 11, 13, 0.95);
+  color: var(--text-inverse);
   border-bottom: 1px solid var(--border);
   padding: 1.6rem 3vw;
   display: flex;
@@ -95,7 +95,7 @@ a:hover {
 
 .brand-tagline {
   display: block;
-  color: var(--text-muted);
+  color: rgba(245, 245, 247, 0.65);
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -111,7 +111,7 @@ a:hover {
 }
 
 .site-nav a {
-  color: var(--text);
+  color: var(--text-inverse);
   font-weight: 600;
 }
 
