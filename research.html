@@ -2,52 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Our research connects extracellular matrix biology, spatial immune profiling, 3D models and artificial intelligence." />
+  <meta name="theme-color" content="#133d40" />
   <title>Research | mAIques Lab</title>
+  <link rel="canonical" href="https://maiqueslab.org/research.html" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="canonical" href="https://maiqueslab.org/research.html" />
+  <script src="site.js" defer></script>
 </head>
-<body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header">
-  <a class="brand-link" href="index.html" aria-label="mAIques Lab home">
-  <img class="brand-logo" src="logo.png" alt="" width="68" height="68" />
-  <div>
-  <span class="brand-name">mAIques Lab</span>
-  <span class="brand-tagline">Spatial biology, 3D models, AI</span>
-</div></a>
-<nav class="site-nav" aria-label="Main navigation">
-  <a href="about.html">About</a>
-<a href="research.html" aria-current="page">Research</a>
-<a href="team.html">Team</a>
-<a href="funding.html">Funding</a>
-<a href="news.html">News</a>
-<a href="publications.html">Publications</a>
-<a href="contact.html">Contact</a>
-</nav></header>
-<main class="page" id="main">
-  <section class="section page-intro">
-  <p class="eyebrow">mAIques Lab · Barts Cancer Institute</p>
-  <h1 class="section-title">Cancer in context</h1>
-  <p class="section-subtitle">How do the physical organisation of tissue and its immune neighbourhoods influence cancer progression?</p>
-</section>
+<body class="page-research">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-link" href="index.html" aria-label="mAIques Lab home"><span class="wordmark">m<span class="wordmark-ai">AI</span>ques<span class="wordmark-lab">Lab</span></span></a>
+      <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="team.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="funding.html">Funding</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="page">
+
+  <section class="page-intro"><p class="eyebrow">Our research</p><h1>Cancer doesn’t<br />act alone.</h1><p class="intro-text">We study how the physical organisation of tissue and its immune neighbourhoods influence cancer progression.</p></section>
   <section class="section">
   <h2 class="section-title">Our approach</h2>
   <div class="grid">
   <article class="card">
-  <h3>Extracellular matrix and mechanics</h3>
+  <span class="research-number">01 /</span><h3 id="experimental-models">Extracellular matrix and mechanics</h3>
   <p>We investigate how collagen organisation and tissue mechanics affect cancer-cell behaviour, invasion and plasticity.</p>
 </article>
 <article class="card">
-  <h3>Spatial immune biology</h3>
+  <span class="research-number">02 /</span><h3 id="spatial-biology">Spatial immune biology</h3>
   <p>We use multiplex tissue imaging and spatial analysis to study relationships between cancer cells, immune cells and the extracellular matrix.</p>
 </article>
 <article class="card">
-  <h3>Computational pathology</h3>
+  <span class="research-number">03 /</span><h3 id="computational-pathology">Computational pathology</h3>
   <p>We develop and apply AI methods to study tissue morphology, molecular features and potential biomarkers from pathology images.</p>
 </article></div>
 </section>
@@ -80,9 +78,15 @@
   <h2 class="section-title">From models to patient tissue</h2>
   <p>Our work combines 3D collagen and organotypic models with multiplex immunohistochemistry, spatial tissue profiling and computational analysis. We use these complementary approaches to test biological mechanisms and investigate their relevance in patient samples.</p>
   <a class="button primary" href="publications.html">Selected publications</a>
-</section></main>
-<footer class="site-footer">
-  <p>&copy; 2026 mAIques Lab · Barts Cancer Institute<br />Queen Mary University of London</p>
-  <a href="contact.html">Contact the lab</a>
-</footer>
-</body></html>
+</section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><a class="brand-link" href="index.html" aria-label="mAIques Lab home"><span class="wordmark">m<span class="wordmark-ai">AI</span>ques<span class="wordmark-lab">Lab</span></span></a><p>Spatial biology. Experimental models.<br />A new perspective on cancer.</p></div>
+      <div><span class="footer-label">Find us</span><p>Barts Cancer Institute<br />Queen Mary University of London<br />Charterhouse Square, London EC1M 6BQ</p></div>
+      <div><span class="footer-label">Connect</span><a href="mailto:o.m.carlos@qmul.ac.uk">Email the lab <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=wE5p-pEAAAAJ">Google Scholar <span aria-hidden="true">↗</span></a><a href="news.html">Lab news <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 mAIques Lab</span><span>Research at the intersection of biology and AI.</span></div>
+  </footer>
+</body>
+</html>
