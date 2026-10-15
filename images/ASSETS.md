@@ -22,3 +22,9 @@ Bahar is represented with initials pending a portrait.
 
 ## Original graphics
 favicon.svg and tissue-landscape.svg were created for this redesign. The tissue graphic is a conceptual illustration, not microscopy or experimental data.
+
+## Lab life gallery
+Selected public posts from the lab-owned Instagram account, downloaded 15 October 2026. Local images and links are curated; this is not an automatically synchronised feed.
+- lab-life/manel-visit.jpg: https://www.instagram.com/maiqueslab/p/DJv22lSsVGj/ (17 May 2025).
+- lab-life/instagram-welcome.jpg: https://www.instagram.com/maiqueslab/p/DJr63qdMU1r/ (15 May 2025).
+- lab-life/eacr-2026.jpg: cover of https://www.instagram.com/maiqueslab/reel/DZVxrRWsCAu/ (8 June 2026).

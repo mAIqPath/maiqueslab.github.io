@@ -259,3 +259,38 @@ p { margin-bottom:1.3rem; }
  .brand-logo { width:214px; left:-20px; top:-67px; }
  .site-nav { border-color:#303036; }
 }
+
+/* Lab life: selected public Instagram posts, hosted locally for reliable display. */
+.life-intro { display:flex; align-items:flex-end; justify-content:space-between; gap:3rem; }
+.life-intro .intro-text { max-width:650px; }
+.life-intro .button { flex-shrink:0; margin-bottom:.4rem; }
+.life-gallery-section { padding-block:2.6rem 5rem; }
+.life-gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2rem; }
+.life-photo { display:block; position:relative; overflow:hidden; background:#0b0b0d; margin-bottom:1.6rem; }
+.life-photo img { display:block; width:100%; height:auto; aspect-ratio:1; object-fit:cover; transition:transform .25s ease; }
+.life-photo:hover img { transform:scale(1.025); }
+.life-photo:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
+.life-badge { position:absolute; left:1rem; bottom:1rem; padding:.45rem .7rem; background:#0b0b0d; color:#fff; font-size:.72rem; font-weight:650; }
+.life-card .news-date { margin-bottom:.85rem; font-size:.62rem; }
+.life-card h3 { font-size:1.65rem; line-height:1.2; letter-spacing:-.035em; margin-bottom:.8rem; }
+.life-card > p:not(.news-date) { color:var(--muted); font-size:.9rem; line-height:1.7; margin-bottom:1.3rem; }
+.life-connect { display:flex; justify-content:space-between; align-items:center; gap:2rem; border-top:1px solid var(--line); padding-block:3rem; }
+.life-connect h2 { font-size:2.3rem; letter-spacing:-.04em; margin-bottom:.7rem; }
+.life-connect p:last-child { color:var(--muted); margin:0; }
+@media (min-width:781px) and (max-width:960px) {
+ .header-inner { flex-wrap:wrap; justify-content:center; gap:0; padding-bottom:.6rem; }
+ .site-nav { justify-content:center; }
+}
+@media (max-width:780px) {
+ .life-intro { display:block; }
+ .life-intro .button { margin-top:1.6rem; }
+ .life-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); gap:2.5rem 1.5rem; }
+ .life-card h3 { font-size:1.4rem; }
+ .life-connect { align-items:flex-start; flex-direction:column; }
+}
+@media (max-width:520px) {
+ .life-gallery { grid-template-columns:1fr; gap:3rem; }
+ .life-gallery-section { padding-block:1.5rem 3.5rem; }
+ .life-card h3 { font-size:1.7rem; }
+ .life-card > p:not(.news-date) { font-size:.95rem; }
+}
