@@ -1,0 +1,94 @@
+[
+  {
+    "id": "bci",
+    "name": "Barts Cancer Institute",
+    "institution": "Queen Mary University of London",
+    "city": "London",
+    "category": "Academic",
+    "label": "Our home",
+    "description": "Our base for experimental cancer biology, spatial profiling and digital pathology.",
+    "url": "https://www.bci.qmul.ac.uk/",
+    "source": "https://www.bci.qmul.ac.uk/team/profile/dr-oscar-maiques/"
+  },
+  {
+    "id": "chelala",
+    "name": "Prof Claude Chelala",
+    "institution": "Barts Cancer Institute · QMUL",
+    "city": "London",
+    "category": "Academic",
+    "label": "Bioinformatics & supervision",
+    "description": "Second supervisor for Sayali’s MRC iCASE studentship, connecting bioinformatics and digital pathology.",
+    "url": "https://www.bci.qmul.ac.uk/team/profile/professor-claude-chelala/"
+  },
+  {
+    "id": "godinho",
+    "name": "Prof Susana Godinho",
+    "institution": "Barts Cancer Institute · QMUL",
+    "city": "London",
+    "category": "Academic",
+    "label": "Cell biology",
+    "description": "Co-investigator on our Barts Charity seed project on centrosome amplification, starting January 2027.",
+    "url": "https://www.bci.qmul.ac.uk/team/profile/professor-susana-godinho/"
+  },
+  {
+    "id": "liu",
+    "name": "Dr Ziquan Liu",
+    "institution": "School of Electronic Engineering and Computer Science · QMUL",
+    "city": "London",
+    "category": "Academic",
+    "label": "Multimodal AI",
+    "description": "Second supervisor for Bahar’s project on uncertainty-aware AI and ambiguous biological boundaries.",
+    "url": "https://www.qmul.ac.uk/eecs/people/profiles/ziquan-liu.html"
+  },
+  {
+    "id": "karagiannis",
+    "name": "Prof Sophia Karagiannis",
+    "institution": "King’s College London",
+    "city": "London",
+    "category": "Academic",
+    "label": "Cancer immunology",
+    "description": "Second supervisor for Eve’s project on B cells, the extracellular matrix and melanoma.",
+    "url": "https://www.kcl.ac.uk/people/sophia-n-karagiannis"
+  },
+  {
+    "id": "marshall",
+    "name": "Prof John F. Marshall",
+    "institution": "Barts Cancer Institute · QMUL",
+    "city": "London",
+    "category": "Academic",
+    "label": "Pancreatic cancer",
+    "description": "Research connection in pancreatic cancer and the organisation of its tumour microenvironment.",
+    "url": "https://www.bci.qmul.ac.uk/team/profile/professor-john-f-marshall/",
+    "source": "https://www.bci.qmul.ac.uk/interviews/2024/12/shining-a-spotlight-on-ai-research-at-the-barts-cancer-institute/"
+  },
+  {
+    "id": "lleida",
+    "name": "Prof Xavier Matias-Guiu & Prof Rosa Maria Martí",
+    "institution": "IRBLleida · University of Lleida",
+    "city": "Lleida",
+    "category": "Clinical research",
+    "label": "Pathology & dermatology",
+    "description": "Clinical and scientific connections through Oscar’s doctoral training and shared research publications.",
+    "url": "https://www.irblleida.org/en/research/members/16/oncological-pathology"
+  },
+  {
+    "id": "panakeia",
+    "name": "Panakeia Technologies",
+    "institution": "Industry partner",
+    "city": "Cambridge",
+    "category": "Industry",
+    "label": "AI & molecular profiling",
+    "description": "Industrial partner for Sayali’s MRC iCASE PhD studentship.",
+    "url": "https://www.panakeia.ai/"
+  },
+  {
+    "id": "biobanks",
+    "name": "Barts tissue banks",
+    "institution": "Barts Cancer Institute · QMUL",
+    "city": "London",
+    "category": "Biobanks",
+    "label": "Research infrastructure",
+    "description": "Tissue-bank infrastructure at our home institute, linking donated samples, clinical expertise and research.",
+    "url": "https://www.bci.qmul.ac.uk/research/core-services/tissue-banks/"
+  }
+]

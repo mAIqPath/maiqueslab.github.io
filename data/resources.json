@@ -1,0 +1,144 @@
+{
+  "reading": [
+    {
+      "domain": "emt",
+      "authors": "Yang et al.",
+      "title": "Guidelines and definitions for research on epithelial–mesenchymal transition",
+      "year": "2020",
+      "journal": "Nature Reviews Molecular Cell Biology",
+      "doi": "10.1038/s41580-020-0237-9",
+      "description": "A shared framework for describing EMT, phenotypic plasticity and intermediate cell states.",
+      "url": "https://doi.org/10.1038/s41580-020-0237-9"
+    },
+    {
+      "domain": "emt",
+      "authors": "Pastushenko et al.",
+      "title": "Identification of the tumour transition states occurring during EMT",
+      "year": "2018",
+      "journal": "Nature",
+      "doi": "10.1038/s41586-018-0040-3",
+      "description": "Experimental evidence for distinct intermediate EMT states with different biological properties.",
+      "url": "https://doi.org/10.1038/s41586-018-0040-3"
+    },
+    {
+      "domain": "ai",
+      "authors": "Campanella et al.",
+      "title": "Clinical-grade computational pathology using weakly supervised deep learning on whole slide images",
+      "year": "2019",
+      "journal": "Nature Medicine",
+      "doi": "10.1038/s41591-019-0508-1",
+      "description": "How slide-level labels can train pathology models without exhaustive regional annotations.",
+      "url": "https://doi.org/10.1038/s41591-019-0508-1"
+    },
+    {
+      "domain": "ai",
+      "authors": "Lu et al.",
+      "title": "Data-efficient and weakly supervised computational pathology on whole-slide images",
+      "year": "2021",
+      "journal": "Nature Biomedical Engineering",
+      "doi": "10.1038/s41551-020-00682-w",
+      "description": "CLAM connects whole-slide classification with interpretable attention maps.",
+      "url": "https://doi.org/10.1038/s41551-020-00682-w"
+    },
+    {
+      "domain": "spatial",
+      "authors": "Ståhl et al.",
+      "title": "Visualization and analysis of gene expression in tissue sections by spatial transcriptomics",
+      "year": "2016",
+      "journal": "Science",
+      "doi": "10.1126/science.aaf2403",
+      "description": "A foundational approach for connecting gene expression with tissue organisation.",
+      "url": "https://doi.org/10.1126/science.aaf2403"
+    },
+    {
+      "domain": "spatial",
+      "authors": "Schürch et al.",
+      "title": "Coordinated Cellular Neighborhoods Orchestrate Antitumoral Immunity at the Colorectal Cancer Invasive Front",
+      "year": "2020",
+      "journal": "Cell",
+      "doi": "10.1016/j.cell.2020.07.005",
+      "description": "Multiplex imaging reveals how cellular neighbourhoods relate to tumour immunity.",
+      "url": "https://doi.org/10.1016/j.cell.2020.07.005"
+    },
+    {
+      "domain": "models",
+      "authors": "Sato et al.",
+      "title": "Single Lgr5 stem cells build crypt-villus structures in vitro without a mesenchymal niche",
+      "year": "2009",
+      "journal": "Nature",
+      "doi": "10.1038/nature07935",
+      "description": "A foundational demonstration of self-organising intestinal organoids grown from single stem cells.",
+      "url": "https://doi.org/10.1038/nature07935"
+    },
+    {
+      "domain": "models",
+      "authors": "Boj et al.",
+      "title": "Organoid Models of Human and Mouse Ductal Pancreatic Cancer",
+      "year": "2015",
+      "journal": "Cell",
+      "doi": "10.1016/j.cell.2014.12.021",
+      "description": "Pancreatic organoids as models of normal tissue, cancer progression and therapeutic opportunities.",
+      "url": "https://doi.org/10.1016/j.cell.2014.12.021"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "NCI Genomic Data Commons — TCGA",
+      "description": "Explore clinical, molecular and tissue-slide data, including melanoma (TCGA-SKCM) and pancreatic adenocarcinoma (TCGA-PAAD).",
+      "access": "Open and controlled access",
+      "url": "https://portal.gdc.cancer.gov/",
+      "tags": "Melanoma · Pancreas · Pathology"
+    },
+    {
+      "name": "TCIA — Cancer Moonshot Biobank Melanoma",
+      "description": "De-identified melanoma histopathology and radiology with supporting clinical information.",
+      "access": "Public collection",
+      "url": "https://www.cancerimagingarchive.net/collection/cmb-mel/",
+      "tags": "Melanoma · Imaging"
+    },
+    {
+      "name": "Human Tumor Atlas Network",
+      "description": "Multimodal cancer atlases connecting tissue imaging, spatial measurements and molecular profiles.",
+      "access": "Access varies by dataset",
+      "url": "https://data.humantumoratlas.org/",
+      "tags": "Spatial biology · Multi-omics"
+    },
+    {
+      "name": "10x Genomics — pancreatic cancer Xenium",
+      "description": "Spatial-expression data for exploring transcripts, cell segmentation and the organisation of pancreatic cancer tissue.",
+      "access": "Public demonstration dataset",
+      "url": "https://www.10xgenomics.com/datasets/pancreatic-cancer-with-xenium-human-multi-tissue-and-cancer-panel-1-standard",
+      "tags": "Pancreas · Spatial biology"
+    },
+    {
+      "name": "CZ CELLxGENE Discover",
+      "description": "Search and explore single-cell datasets for cell-type annotation and reference comparisons.",
+      "access": "Public portal",
+      "url": "https://cellxgene.cziscience.com/",
+      "tags": "Single-cell · Reference data"
+    }
+  ],
+  "protocols": [
+    {
+      "title": "Multiplex chromogenic immunohistochemistry",
+      "description": "A sequential staining and image-analysis workflow for multiplex brightfield imaging of paraffin tissue sections.",
+      "meta": "Maiques & Sanz-Moreno · STAR Protocols · 2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9720345/",
+      "label": "Read the protocol"
+    },
+    {
+      "title": "ECM organisation & mechanical memory",
+      "description": "Published methods and supporting materials for analysing matrix organisation, invasion and mechanical memory.",
+      "meta": "Maiques et al. · Nature Communications · 2025",
+      "url": "https://www.nature.com/articles/s41467-025-56299-7",
+      "label": "Methods & source data"
+    },
+    {
+      "title": "A preclinical migrastatics pipeline",
+      "description": "An integrated workflow combining public-data analysis, invasion assays and preclinical tracking of melanoma metastasis.",
+      "meta": "Maiques et al. · British Journal of Cancer · 2021",
+      "url": "https://www.nature.com/articles/s41416-021-01442-6",
+      "label": "Explore the workflow"
+    }
+  ]
+}

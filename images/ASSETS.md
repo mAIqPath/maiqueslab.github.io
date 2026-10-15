@@ -28,3 +28,6 @@ Selected public posts from the lab-owned Instagram account, downloaded 15 Octobe
 - lab-life/manel-visit.jpg: https://www.instagram.com/maiqueslab/p/DJv22lSsVGj/ (17 May 2025).
 - lab-life/instagram-welcome.jpg: https://www.instagram.com/maiqueslab/p/DJr63qdMU1r/ (15 May 2025).
 - lab-life/eacr-2026.jpg: cover of https://www.instagram.com/maiqueslab/reel/DZVxrRWsCAu/ (8 June 2026).
+
+## Network map
+Natural Earth 1:110m land geometry (public domain), simplified for a local SVG map. Source: https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_land.geojson . City markers show approximate locations, not exact institution addresses.
