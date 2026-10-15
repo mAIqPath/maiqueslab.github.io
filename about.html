@@ -2,95 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn about the mAIques Lab mission, origins, and research themes in spatial biology and AI." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Oscar Maiques, our lab at Barts Cancer Institute, and our research and teaching activities." />
+  <meta name="theme-color" content="#0b0b0d" />
   <title>About | mAIques Lab</title>
+  <link rel="canonical" href="https://maiqueslab.org/about.html" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="site.js" defer></script>
 </head>
-<body>
+<body class="page-about">
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand-link" href="index.html">
-      <img class="brand-logo" src="logo.png" alt="mAIques Lab logo" />
-      <div>
-        <span class="brand-name">mAIques Lab</span>
-        <span class="brand-tagline">Spatial biology, 3D models, AI</span>
-      </div>
-    </a>
-    <nav class="site-nav">
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="team.html">Team</a>
-      <a href="news.html">News</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="header-inner">
+      <a class="brand-link" href="index.html" aria-label="mAIques Lab home"><span class="brand-logo-window"><img class="brand-logo" src="logo.png" alt="mAIques Lab" width="1024" height="1024" /></span></a>
+      <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+        <a href="research.html">Research</a>
+        <a href="team.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="funding.html">Funding</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
+  <main id="main" class="page">
 
-  <main class="page">
-    <section class="section">
-      <h1 class="section-title">About the mAIques Lab</h1>
-      <p class="section-subtitle">Our mission is to decode the structural and spatial complexity of the extracellular matrix (ECM) to enable earlier cancer detection and personalized therapies through spatial omics and AI.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Mission</h3>
-          <p>We bridge experimental pathology and computational analysis to understand ECM-driven transformation and immune dynamics in early-stage cancer.</p>
-        </div>
-        <div class="card">
-          <h3>Approach</h3>
-          <p>Our workflows combine 3D organotypic models, spatial omics, and interpretable ML to translate deep tissue phenotyping into clinical insights.</p>
-        </div>
-      </div>
-    </section>
+  <section class="page-intro"><p class="eyebrow">About us</p><h1>A lab built<br />between disciplines.</h1><p class="intro-text">We connect tissue architecture with cancer biology, bringing experimental models, spatial analysis and AI together.</p></section>
+  <section class="section">
+  <h2 class="section-title">Our lab</h2>
+  <p>Established in April 2024, the mAIques Lab is led by Dr Oscar Maiques, Lecturer and Group Leader in Digital Pathology at Barts Cancer Institute, Queen Mary University of London.</p>
+  <p>We are based in the Centre for Cancer Biomarkers and Biotherapeutics. Our research investigates how the extracellular matrix and immune microenvironment influence cancer, with an emphasis on melanoma and pancreatic cancer.</p>
+</section>
 
-    <section class="section">
-      <h2 class="section-title">Research themes</h2>
-      <div class="theme-grid">
-        <img src="images/Research_Theme_1.png" alt="ECM plasticity and mechanobiology" />
-        <img src="images/Research_Theme_2.png" alt="Spatial tissue organization and single-cell technologies" />
-        <img src="images/Research_Theme_3.png" alt="3D aligned ECM models and organotypic cultures" />
-        <img src="images/Research_Theme_4.png" alt="AI-driven histopathology and biomarker discovery" />
-        <img src="images/Research_Theme_5.png" alt="Translational precision oncology using clinical datasets" />
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Lab origins and vision</h2>
-      <p>I studied Biotechnology with a specialization in health sciences and completed my PhD in a clinical pathology lab at the <a href="https://www.irblleida.org/es/investigacion/members/16/oncological-pathology" target="_blank" rel="noreferrer">University of Lleida</a>, under the mentorship of Prof. Xavier Matias-Guiu and Prof. Rosa Maria Marti. I pursued postdoctoral training in 3D and spatial biology across <a href="https://www.kcl.ac.uk/" target="_blank" rel="noreferrer">King's College London</a>, <a href="https://www.bci.qmul.ac.uk/" target="_blank" rel="noreferrer">Barts Cancer Institute</a>, and the <a href="https://www.icr.ac.uk/" target="_blank" rel="noreferrer">Institute of Cancer Research</a> with Prof. Victoria Sanz-Moreno.</p>
-      <p>The mAIques Lab was established through my academic appointment under the mentorship of <a href="https://www.bci.qmul.ac.uk/staff/professor-claude-chelala/" target="_blank" rel="noreferrer">Prof. Claude Chelala</a> and <a href="https://www.qmul.ac.uk/blizard/all-staff/profiles/carol-dezateux.html" target="_blank" rel="noreferrer">Prof. Carol Dezateux</a>, as part of the Barts Precision Medicine Programme, within the <a href="https://bartslifesciences.org/" target="_blank" rel="noreferrer">Barts Life Sciences</a> ecosystem, and generously supported by <a href="https://www.bartscharity.org.uk/" target="_blank" rel="noreferrer">Barts Charity</a>.</p>
-      <p>Our team aims to translate deep spatial phenotyping into actionable clinical insights for stratification and early detection.</p>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Collaboration and impact</h2>
-      <p>Our lab has participated in key initiatives such as the <a href="https://www.optima-oncology.eu/" target="_blank" rel="noreferrer">OPTIMA Consortium</a>, building on infrastructure and collaboration led by Prof. Claude Chelala. These experiences have strengthened national and international ties and enabled us to develop capabilities for clinical AI applications and precision oncology.</p>
-      <p>We also collaborate with industry partners like <a href="https://www.panakeia.ai/" target="_blank" rel="noreferrer">Panakeia Technologies</a>, exploring how AI-powered diagnostic tools can enhance pathology workflows.</p>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Where to find us</h2>
-      <p>Our lab is located at the <a href="https://www.bci.qmul.ac.uk/barts-cancer-institute/centre-for-biomarkers-biotherapeutics/" target="_blank" rel="noreferrer">Centre for Cancer Biomarkers and Biotherapeutics</a>, <a href="https://www.bci.qmul.ac.uk/" target="_blank" rel="noreferrer">Barts Cancer Institute</a>, part of <a href="https://www.qmul.ac.uk/" target="_blank" rel="noreferrer">Queen Mary University of London</a>.</p>
-      <div class="contact-grid">
-        <iframe
-          class="map-frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8076278192834!2d-0.10090348422907735!3d51.52184407963671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b516a3a4f41%3A0x559693b496ff7e46!2sBarts%20Cancer%20Institute!5e0!3m2!1sen!2suk!4v1713742308266!5m2!1sen!2suk"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <div class="card">
-          <h3>Address</h3>
-          <p><strong>Barts Cancer Institute</strong><br />
-          Charterhouse Square<br />
-          London EC1M 6BQ, United Kingdom</p>
-        </div>
-      </div>
-    </section>
+  <section class="section">
+  <h2 class="section-title">Oscar’s background</h2>
+  <p>Oscar trained in Biotechnology and completed his PhD at the University of Lleida with Prof Xavier Matias-Guiu and Prof Rosa Maria Marti. He subsequently undertook postdoctoral research with Prof Victoria Sanz-Moreno across King’s College London, Barts Cancer Institute and the Institute of Cancer Research.</p>
+  <p>He established the lab through the Barts Precision Medicine Programme, with mentorship from Prof Claude Chelala and Prof Carol Dezateux and support from Barts Charity.</p>
+  <p>
+  <a href="https://www.bci.qmul.ac.uk/team/profile/dr-oscar-maiques/">Institutional profile</a> · <a href="https://orcid.org/0000-0002-2172-4388">ORCID</a> · <a href="https://scholar.google.com/citations?user=wE5p-pEAAAAJ">Google Scholar</a></p>
+</section>
+  <section class="section">
+  <h2 class="section-title">Teaching and academic activities</h2>
+  <div class="grid">
+  <article class="card">
+  <h3>Teaching and supervision</h3>
+  <p>Oscar teaches spatial biology, AI, personalised medicine and digital pathology, and supervises PhD, MSc and MRes research.</p>
+  <p>He co-leads Cancer Biology and Research Skills (SSC1b, CANM938) from 2026 and is a Fellow of the Higher Education Academy.</p>
+</article>
+<article class="card">
+  <h3>Academic service</h3>
+  <p>Oscar is a member of the British Association for Cancer Research and the European Association for Cancer Research, and the BCI delegate to the Faculty of Medicine and Dentistry Data Strategy and Capability Committee.</p>
+  <p>He contributes to tissue-bank application review, the BCI Communications Committee and the DERI Fellows Network.</p>
+</article>
+<article class="card">
+  <h3>Partnerships and involvement</h3>
+  <p>We collaborate with Panakeia Technologies and contribute to the OPTIMA oncology network.</p>
+  <p>Patient involvement through the Pancreatic Cancer UK Research Involvement Network helps inform our research.</p>
+</article></div>
+</section>
+  <section class="section">
+  <h2 class="section-title">Based in London</h2>
+  <p>Barts Cancer Institute, Charterhouse Square, London EC1M 6BQ, United Kingdom.</p>
+  <a class="button primary" href="contact.html">Find us and get in touch</a>
+</section>
   </main>
-
   <footer class="site-footer">
-    &copy; 2025 mAIques Lab. All rights reserved.
+    <div class="footer-inner">
+      <div><a class="brand-link" href="index.html" aria-label="mAIques Lab home"><span class="brand-logo-window"><img class="brand-logo" src="logo.png" alt="mAIques Lab" width="1024" height="1024" /></span></a><p>Spatial biology. Experimental models.<br />A new perspective on cancer.</p></div>
+      <div><span class="footer-label">Find us</span><p>Barts Cancer Institute<br />Queen Mary University of London<br />Charterhouse Square, London EC1M 6BQ</p></div>
+      <div><span class="footer-label">Connect</span><a href="mailto:o.m.carlos@qmul.ac.uk">Email the lab <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=wE5p-pEAAAAJ">Google Scholar <span aria-hidden="true">↗</span></a><a href="news.html">Lab news <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 mAIques Lab</span><span>Research at the intersection of biology and AI.</span></div>
   </footer>
 </body>
 </html>
