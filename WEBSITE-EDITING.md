@@ -12,3 +12,6 @@ English is authored in the HTML. Spanish, Catalan, French and German dictionarie
 
 ## Local check
 Serve this folder with a static HTTP server, for example python -m http.server 8765 --bind 127.0.0.1. Test navigation, translations, city/category filters, paper search and mobile widths before publishing. Check source URLs when adding scientific resources. The map uses public-domain Natural Earth geometry, attributed in images/ASSETS.md.
+
+## Mobile app
+See MOBILE-APP.md for the installable companion and current limitations. app.html saves drafts on the device; no protected inbox or automatic publishing is connected. Keep the service worker network-first so visitors see current website publications.

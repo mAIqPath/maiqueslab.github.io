@@ -36,7 +36,7 @@
     if (select) select.disabled = true;
     try {
       if (!dictionaries[requested]) {
-        const response = await fetch('i18n/' + requested + '.json?v=20261015-network-v1');
+        const response = await fetch('i18n/' + requested + '.json?v=20261016-mobile-v1');
         if (!response.ok) throw new Error('Language unavailable');
         dictionaries[requested] = await response.json();
       }

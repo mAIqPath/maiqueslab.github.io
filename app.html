@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Keep the mAIques Lab website on your phone and prepare notes, photos and suggestions for website updates.">
+  <meta name="theme-color" content="#0b0b0d" />
+  <title>Mobile app | mAIques Lab</title>
+  <link rel="canonical" href="https://maiqueslab.org/app.html" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261015-network-v1" />
+  <script src="site.js?v=20261015-network-v1" defer></script>
+  <script src="i18n.js?v=20261016-mobile-v1" defer></script>
+<link rel="stylesheet" href="app.css?v=20261016-mobile-v1"><script src="app.js?v=20261016-mobile-v1" defer></script><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="images/app-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script src="pwa.js?v=20261016-mobile-v1" defer></script></head>
+<body class="page-app">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner"><a class="brand-link" href="index.html" aria-label="mAIques Lab home"><span class="brand-logo-window"><img class="brand-logo" src="logo.png" alt="mAIques Lab" width="1024" height="1024" /></span></a><div class="header-tools"><label class="language-picker"><span class="visually-hidden">Language</span><select id="site-language" aria-label="Language" data-no-translate><option value="en" lang="en">English</option><option value="es" lang="es">Español</option><option value="ca" lang="ca">Català</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option></select></label><button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button></div><nav class="site-nav" id="main-nav" aria-label="Main navigation"><a href="research.html">Research</a><a href="team.html">People</a><a href="network.html">Network</a><a href="resources.html">Resources</a><a href="for-everyone.html">For everyone</a><details class="nav-more"><summary>More <span aria-hidden="true">+</span></summary><div class="nav-more-links"><a href="publications.html">Publications</a><a href="funding.html">Funding</a><a href="lab-life.html">Lab life</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></details></nav></div></header>
+  <main id="main" class="app-main wrap">
+<section class="app-intro"><p class="eyebrow">Your mobile companion</p><h1>A little less admin.<br><em>More lab life.</em></h1><p>Collect an idea, add photos and send an update when you are ready.</p><div class="app-install"><button id="install-app" class="button primary" hidden type="button">Install the app</button><p id="install-help">Add this page to your home screen from your browser menu.</p></div></section>
+<nav class="app-shortcuts" aria-label="Explore the lab"><a href="index.html">Website <span aria-hidden="true">↗</span></a><a href="lab-life.html">Lab life <span aria-hidden="true">↗</span></a><a href="resources.html">Resources <span aria-hidden="true">↗</span></a><a href="network.html">Network <span aria-hidden="true">↗</span></a></nav>
+<section class="app-editor" aria-labelledby="update-heading"><div class="app-editor-heading"><div><p class="eyebrow">Something to add?</p><h2 id="update-heading">Prepare an update.</h2></div><p>A rough sentence is enough. You can dictate using your phone keyboard.</p></div>
+<form id="update-form"><div class="app-field-row"><label>Where should it go?<select id="update-section" name="section"><option value="Lab life">Lab life</option><option value="Resources">Resources</option><option value="Network">Network</option><option value="People">People</option><option value="Funding">Funding</option><option value="For everyone">For everyone</option><option value="Other suggestion">Other suggestion</option></select></label><label>Publishing preference<select id="update-preference" name="preference"><option value="Publish when ready">Publish when ready</option><option value="Show me first">Show me first</option></select></label></div>
+<label>What would you like to add?<textarea id="update-notes" name="notes" rows="6" maxlength="12000" placeholder="For example: Eve presented at this conference. Add these photos to Lab life." required></textarea></label>
+<label>Link, if you have one<input id="update-link" name="link" type="url" maxlength="2000" placeholder="https://" inputmode="url"></label>
+<label class="app-upload">Add photos<input id="update-photos" type="file" accept="image/*" multiple aria-describedby="photo-help"></label><p id="photo-help" class="app-small">Photos stay selected while this page is open. They are not saved with your draft.</p><div id="photo-previews" class="app-photo-previews" aria-live="polite"></div>
+<p id="draft-status" class="app-draft-status" role="status" data-no-translate></p><div class="app-actions"><button id="share-update" class="button primary" type="submit" hidden>Share update</button><button id="copy-update" class="button primary" type="button">Copy update</button><button id="download-update" class="button secondary" type="button">Save a text copy</button><button id="clear-update" class="app-clear" type="button">Clear draft</button></div>
+<div id="manual-copy" hidden><label>Copy this text<textarea id="copy-text" rows="8" readonly></textarea></label></div><p id="send-status" class="app-small" role="status" data-no-translate></p></form>
+<aside class="app-send-note"><strong>Send it to ChatGPT</strong><p>Choose ChatGPT in your phone’s share menu, or copy the update into this conversation and attach your photos there.</p><a href="https://chatgpt.com/" class="text-link" target="_blank" rel="noopener noreferrer">Open ChatGPT <span aria-hidden="true">↗</span></a><p class="app-small">Drafts stay on this device until you share them. Automatic inbox processing is not connected yet.</p></aside></section>
+<section class="app-how"><h2>Keep it simple.</h2><div><article><span class="research-number">01 /</span><h3>Capture the moment</h3><p>A team photo, a paper worth reading or a new collaborator.</p></article><article><span class="research-number">02 /</span><h3>Add a little context</h3><p>Who, what and where. You do not need to write the finished post.</p></article><article><span class="research-number">03 /</span><h3>Send it over</h3><p>Share your note here so the website can be updated.</p></article></div></section></main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><a class="brand-link" href="index.html" aria-label="mAIques Lab home"><span class="brand-logo-window"><img class="brand-logo" src="logo.png" alt="mAIques Lab" width="1024" height="1024" /></span></a><p>Spatial biology. Experimental models.<br />A new perspective on cancer.</p></div>
+      <div><span class="footer-label">Find us</span><p>Barts Cancer Institute<br />Queen Mary University of London<br />Charterhouse Square, London EC1M 6BQ</p></div>
+      <div><span class="footer-label">Connect</span><a href="mailto:o.m.carlos@qmul.ac.uk">Email the lab <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=wE5p-pEAAAAJ">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/maiqueslab/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a><a href="lab-life.html">Lab life <span aria-hidden="true">↗</span></a><a href="network.html">Network <span aria-hidden="true">↗</span></a><a href="resources.html">Resources <span aria-hidden="true">↗</span></a><a href="for-everyone.html">For everyone <span aria-hidden="true">↗</span></a><a href="news.html">Lab news <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 mAIques Lab</span><span>Research at the intersection of biology and AI.</span></div>
+  </footer>
+</body>
+</html>
