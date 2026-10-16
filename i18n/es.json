@@ -535,5 +535,18 @@
   "Share menu completed. Check the receiving app to confirm you sent the update.": "Menú de compartir completado. Comprueba en la aplicación de destino que has enviado la actualización.",
   "Sharing did not finish. Copy the update and send it in ChatGPT.": "No se ha completado el envío. Copia la actualización y envíala en ChatGPT.",
   "Draft cleared.": "Borrador borrado.",
-  "Keep the mAIques Lab website on your phone and prepare notes, photos and suggestions for website updates.": "Ten la página de mAIques Lab en tu móvil y prepara notas, fotos y sugerencias para actualizarla."
+  "Keep the mAIques Lab website on your phone and prepare notes, photos and suggestions for website updates.": "Ten la página de mAIques Lab en tu móvil y prepara notas, fotos y sugerencias para actualizarla.",
+  "Add photos on the next GitHub screen before submitting your update.": "Añade las fotos en la siguiente pantalla de GitHub antes de enviar la actualización.",
+  "Send to private inbox": "Enviar al buzón privado",
+  "View inbox": "Ver buzón",
+  "Other ways to send": "Otras formas de enviar",
+  "Open inbox form": "Abrir formulario del buzón",
+  "Your private update inbox": "Tu buzón privado de actualizaciones",
+  "GitHub opens with your note filled in. Sign in if needed, attach photos there, and submit the update.": "GitHub se abre con tu nota rellenada. Inicia sesión si es necesario, adjunta las fotos allí y envía la actualización.",
+  "Checked hourly. “Publish when ready” allows routine updates to go live; “Show me first” keeps the draft private until you approve it.": "Se revisa cada hora. «Publicar cuando esté listo» permite publicar actualizaciones habituales; «Enseñármelo primero» mantiene el borrador privado hasta que lo apruebes.",
+  "Your draft stays on this device until you submit it in GitHub.": "El borrador permanece en este dispositivo hasta que lo envíes en GitHub.",
+  "Submit it to your private inbox so the website can be updated.": "Envíalo a tu buzón privado para actualizar la página web.",
+  "You are offline. Your draft is saved; send it when you reconnect.": "No tienes conexión. El borrador está guardado; envíalo cuando vuelvas a conectarte.",
+  "This note is long. Copy the text below, then paste it into the inbox form.": "Esta nota es larga. Copia el texto de abajo y pégalo en el formulario del buzón.",
+  "GitHub opened. Attach photos there and submit the update. Nothing is sent until you submit.": "GitHub abierto. Adjunta las fotos allí y envía la actualización. No se envía nada hasta que confirmes el envío."
 }

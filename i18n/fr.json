@@ -535,5 +535,18 @@
   "Share menu completed. Check the receiving app to confirm you sent the update.": "Menu de partage terminé. Vérifiez dans l’application choisie que la mise à jour a bien été envoyée.",
   "Sharing did not finish. Copy the update and send it in ChatGPT.": "Le partage n’a pas abouti. Copiez la mise à jour et envoyez-la dans ChatGPT.",
   "Draft cleared.": "Brouillon effacé.",
-  "Keep the mAIques Lab website on your phone and prepare notes, photos and suggestions for website updates.": "Gardez le site mAIques Lab sur votre téléphone et préparez des notes, photos et suggestions pour le mettre à jour."
+  "Keep the mAIques Lab website on your phone and prepare notes, photos and suggestions for website updates.": "Gardez le site mAIques Lab sur votre téléphone et préparez des notes, photos et suggestions pour le mettre à jour.",
+  "Add photos on the next GitHub screen before submitting your update.": "Ajoutez les photos sur l’écran GitHub suivant avant d’envoyer votre mise à jour.",
+  "Send to private inbox": "Envoyer dans la boîte privée",
+  "View inbox": "Voir la boîte de réception",
+  "Other ways to send": "Autres moyens d’envoi",
+  "Open inbox form": "Ouvrir le formulaire",
+  "Your private update inbox": "Votre boîte privée de mises à jour",
+  "GitHub opens with your note filled in. Sign in if needed, attach photos there, and submit the update.": "GitHub s’ouvre avec votre note préremplie. Connectez-vous si nécessaire, joignez vos photos et envoyez la mise à jour.",
+  "Checked hourly. “Publish when ready” allows routine updates to go live; “Show me first” keeps the draft private until you approve it.": "Vérification chaque heure. « Publier dès que c’est prêt » permet de publier les mises à jour courantes ; « Me montrer d’abord » garde le brouillon privé jusqu’à votre accord.",
+  "Your draft stays on this device until you submit it in GitHub.": "Votre brouillon reste sur cet appareil jusqu’à son envoi dans GitHub.",
+  "Submit it to your private inbox so the website can be updated.": "Envoyez-le dans votre boîte privée pour mettre le site à jour.",
+  "You are offline. Your draft is saved; send it when you reconnect.": "Vous êtes hors ligne. Votre brouillon est enregistré ; envoyez-le une fois reconnecté.",
+  "This note is long. Copy the text below, then paste it into the inbox form.": "Cette note est longue. Copiez le texte ci-dessous et collez-le dans le formulaire.",
+  "GitHub opened. Attach photos there and submit the update. Nothing is sent until you submit.": "GitHub est ouvert. Joignez-y les photos et envoyez la mise à jour. Rien n’est envoyé avant cette étape."
 }

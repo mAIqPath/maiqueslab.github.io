@@ -1,13 +1,14 @@
-# Mobile app
+# Mobile app and private update inbox
 
-Install https://maiqueslab.org/app.html from your browser's Add to Home Screen/Install menu. The website retains its original logo and colours; install icons use the existing AI favicon monogram.
+Install https://maiqueslab.org/app.html from your browser's Add to Home Screen/Install menu. The existing website logo and colours are preserved. The app saves note drafts on the device and opens a prefilled issue in mAIqPath/maiqueslab-updates, which was verified PRIVATE and writable on 16 October 2026. GitHub handles sign-in, photos and actual submission. No GitHub token or private API response is embedded in public client code.
 
-Available: standalone launch; quick links; device-local note drafts, section, link and publishing preference; photo previews; native system sharing where supported; clipboard fallback; text export; five interface languages. Photos stay in the current page session only. A completed share menu is not proof that the receiving app sent the update.
+## Workflow
+Write a rough note, choose a section and Publish when ready or Show me first, then Send to private inbox. On the GitHub page attach photos and submit. Long notes use a manual paste fallback instead of an oversized URL; offline notes stay saved until connected. Drafts are not marked sent just because the link opened. Clear a draft when finished. Copy/share to ChatGPT remains available as an alternative.
 
-Network-first website pages avoid stale publications. Offline use provides the app shell and an explicit offline notice for other pages. The service worker intercepts only same-origin GET requests and caches only listed public app assets; it never uploads drafts.
+A ChatGPT automation named Update lab website is enabled hourly in Europe/London. It reads PROCESSING.md from the private inbox, processes only owner-authored requests, preserves private drafts until explicit approval, updates website translations and records actual results privately. Routine additions marked Publish when ready may be published directly after checks. No Outlook connection is used. Schedule creation proves configuration, not a completed cloud run.
 
-Pending: no protected admin area, hosted private inbox, automatic hand-off or scheduled publishing is connected. Outlook read access returned USER_NOT_LOGGED_IN on 16 October 2026. No automation was created. Local build tools failed provisioning, so no server application was deployed. Do not describe the public app page as a protected private inbox.
+## Photos
+Photos are attached on GitHub, not uploaded from the public app page. Access to real private GitHub attachment downloads has not been tested; an inaccessible attachment leaves the request open for an asset upload. Files in the private repository assets/ folder can be fetched through the GitHub connector. Never silently omit a requested photo.
 
-Once the owner connects Outlook, verify the account and read access before creating an automation. Use owner-originated, uniquely prefixed submissions only. Preserve Publish when ready versus Show me first. Check duplicate request IDs, handle photos without exposing private material in the public repository, update translations, validate changes, and verify deployment. Store no private email contents in public processing logs. A hosted private inbox with upload storage is still an option when build access is restored.
-
-Validation: script syntax; draft save/restore/clear; publishing preference in copied text; share preserves draft; empty-note rejection; network-first navigation; offline app/fallback; non-GET and cross-origin bypass; all new strings present in four translation dictionaries; PNG install icon decoded visually. Browser layout and device installation could not be checked in the unavailable local runtime.
+## Verification
+The private inbox setup request was created, fetched, given a status comment, closed and read back. Script and URL-generation checks cover encoded notes, publishing preference, long-note and offline fallbacks. Browser/device interaction and the first scheduled execution remain separate checks. Website pages use network-first fetching; app shell can work offline. No cached version of other research pages is served as if live.

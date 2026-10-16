@@ -535,5 +535,18 @@
   "Share menu completed. Check the receiving app to confirm you sent the update.": "Teilen-Menü abgeschlossen. Prüfen Sie in der Ziel-App, ob Sie das Update gesendet haben.",
   "Sharing did not finish. Copy the update and send it in ChatGPT.": "Das Teilen wurde nicht abgeschlossen. Kopieren Sie das Update und senden Sie es in ChatGPT.",
   "Draft cleared.": "Entwurf gelöscht.",
-  "Keep the mAIques Lab website on your phone and prepare notes, photos and suggestions for website updates.": "Nutzen Sie die mAIques-Lab-Website auf Ihrem Handy und bereiten Sie Notizen, Fotos und Vorschläge für Updates vor."
+  "Keep the mAIques Lab website on your phone and prepare notes, photos and suggestions for website updates.": "Nutzen Sie die mAIques-Lab-Website auf Ihrem Handy und bereiten Sie Notizen, Fotos und Vorschläge für Updates vor.",
+  "Add photos on the next GitHub screen before submitting your update.": "Fügen Sie die Fotos auf der nächsten GitHub-Seite hinzu, bevor Sie Ihr Update absenden.",
+  "Send to private inbox": "An privaten Posteingang senden",
+  "View inbox": "Posteingang ansehen",
+  "Other ways to send": "Andere Versandmöglichkeiten",
+  "Open inbox form": "Posteingangsformular öffnen",
+  "Your private update inbox": "Ihr privater Posteingang für Updates",
+  "GitHub opens with your note filled in. Sign in if needed, attach photos there, and submit the update.": "GitHub öffnet sich mit Ihrer vorausgefüllten Notiz. Melden Sie sich bei Bedarf an, hängen Sie dort Fotos an und senden Sie das Update ab.",
+  "Checked hourly. “Publish when ready” allows routine updates to go live; “Show me first” keeps the draft private until you approve it.": "Wird stündlich geprüft. Mit „Veröffentlichen, sobald es fertig ist“ dürfen reguläre Updates online gehen; „Zuerst mir zeigen“ hält den Entwurf bis zu Ihrer Freigabe privat.",
+  "Your draft stays on this device until you submit it in GitHub.": "Ihr Entwurf bleibt auf diesem Gerät, bis Sie ihn in GitHub absenden.",
+  "Submit it to your private inbox so the website can be updated.": "Senden Sie es an Ihren privaten Posteingang, damit die Website aktualisiert werden kann.",
+  "You are offline. Your draft is saved; send it when you reconnect.": "Sie sind offline. Ihr Entwurf ist gespeichert; senden Sie ihn, sobald Sie wieder verbunden sind.",
+  "This note is long. Copy the text below, then paste it into the inbox form.": "Diese Notiz ist lang. Kopieren Sie den folgenden Text und fügen Sie ihn in das Posteingangsformular ein.",
+  "GitHub opened. Attach photos there and submit the update. Nothing is sent until you submit.": "GitHub wurde geöffnet. Hängen Sie dort Fotos an und senden Sie das Update ab. Vor dem Absenden wird nichts gesendet."
 }

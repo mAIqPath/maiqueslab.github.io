@@ -1,5 +1,5 @@
-const CACHE='maiques-mobile-v1';
-const SHELL=['app.html','app.css?v=20261016-mobile-v1','app.js?v=20261016-mobile-v1','pwa.js?v=20261016-mobile-v1','styles.css?v=20261015-network-v1','site.js?v=20261015-network-v1','i18n.js?v=20261016-mobile-v1','logo.png','images/app-192.png','images/app-512.png','offline.html','i18n/es.json?v=20261016-mobile-v1','i18n/ca.json?v=20261016-mobile-v1','i18n/fr.json?v=20261016-mobile-v1','i18n/de.json?v=20261016-mobile-v1'];
+const CACHE='maiques-mobile-v2';
+const SHELL=['app.html','app.css?v=20261016-inbox-v1','app.js?v=20261016-inbox-v1','pwa.js?v=20261016-inbox-v1','styles.css?v=20261015-network-v1','site.js?v=20261015-network-v1','i18n.js?v=20261016-inbox-v1','logo.png','images/app-192.png','images/app-512.png','offline.html','i18n/es.json?v=20261016-inbox-v1','i18n/ca.json?v=20261016-inbox-v1','i18n/fr.json?v=20261016-inbox-v1','i18n/de.json?v=20261016-inbox-v1'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('maiques-mobile-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
 self.addEventListener('fetch',event=>{

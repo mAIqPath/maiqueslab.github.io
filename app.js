@@ -13,6 +13,19 @@
   const valid=()=>{if(!notes.value.trim()){notes.setCustomValidity(t('Please add a short note.'));notes.reportValidity();return false;}notes.setCustomValidity('');return form.reportValidity();};
   notes.addEventListener('input',()=>notes.setCustomValidity(''));
   photos.addEventListener('change',()=>{previewUrls.forEach(URL.revokeObjectURL);previewUrls=[];const previews=document.getElementById('photo-previews');previews.replaceChildren();[...photos.files].forEach(file=>{if(!file.type.startsWith('image/'))return;const figure=document.createElement('figure'),image=document.createElement('img'),caption=document.createElement('figcaption');const url=URL.createObjectURL(file);previewUrls.push(url);image.src=url;image.alt=file.name;caption.textContent=file.name;figure.append(image,caption);previews.append(figure);});});
+
+  document.getElementById('send-inbox').addEventListener('click',event=>{
+    if(!valid()){event.preventDefault();return;}
+    save();
+    if(navigator.onLine===false){event.preventDefault();status(sendStatus,'You are offline. Your draft is saved; send it when you reconnect.');return;}
+    const title='[Website update] '+section.value+': '+notes.value.trim().replace(/\s+/g,' ').slice(0,65);
+    const body=compose()+'\n\n## Photos\nAttach any photos here before submitting, or name files uploaded to assets/ in this private repository.';
+    const url='https://github.com/mAIqPath/maiqueslab-updates/issues/new?template=website-update.md&title='+encodeURIComponent(title)+'&body='+encodeURIComponent(body);
+    if(url.length>7000){event.preventDefault();document.getElementById('manual-copy').hidden=false;const box=document.getElementById('copy-text');box.value=body;box.focus();box.select();status(sendStatus,'This note is long. Copy the text below, then paste it into the inbox form.');return;}
+    event.currentTarget.href=url;
+    status(sendStatus,'GitHub opened. Attach photos there and submit the update. Nothing is sent until you submit.');
+  });
+
   document.getElementById('copy-update').addEventListener('click',async()=>{if(!valid())return;save();const text=compose();try{await navigator.clipboard.writeText(text);status(sendStatus,'Copied. Paste this into ChatGPT and attach your photos there.');}catch{document.getElementById('manual-copy').hidden=false;const box=document.getElementById('copy-text');box.value=text;box.focus();box.select();status(sendStatus,'Select and copy the text below, then paste it into ChatGPT.');}});
   document.getElementById('download-update').addEventListener('click',()=>{if(!valid())return;save();const blob=new Blob([compose()],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='maiques-update-'+requestId+'.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status(sendStatus,'Text copy saved. Photos are not included in this file.');});
   document.getElementById('share-update').hidden=typeof navigator.share!=='function';

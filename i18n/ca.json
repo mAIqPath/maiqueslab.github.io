@@ -535,5 +535,18 @@
   "Share menu completed. Check the receiving app to confirm you sent the update.": "Menú de compartir completat. Comprova a l’aplicació de destinació que has enviat l’actualització.",
   "Sharing did not finish. Copy the update and send it in ChatGPT.": "No s’ha completat l’enviament. Copia l’actualització i envia-la a ChatGPT.",
   "Draft cleared.": "Esborrany esborrat.",
-  "Keep the mAIques Lab website on your phone and prepare notes, photos and suggestions for website updates.": "Tingues la pàgina de mAIques Lab al mòbil i prepara notes, fotos i suggeriments per actualitzar-la."
+  "Keep the mAIques Lab website on your phone and prepare notes, photos and suggestions for website updates.": "Tingues la pàgina de mAIques Lab al mòbil i prepara notes, fotos i suggeriments per actualitzar-la.",
+  "Add photos on the next GitHub screen before submitting your update.": "Afegeix les fotos a la pantalla següent de GitHub abans d’enviar l’actualització.",
+  "Send to private inbox": "Envia a la bústia privada",
+  "View inbox": "Mostra la bústia",
+  "Other ways to send": "Altres maneres d’enviar",
+  "Open inbox form": "Obre el formulari de la bústia",
+  "Your private update inbox": "La teva bústia privada d’actualitzacions",
+  "GitHub opens with your note filled in. Sign in if needed, attach photos there, and submit the update.": "GitHub s’obre amb la teva nota emplenada. Inicia sessió si cal, adjunta-hi les fotos i envia l’actualització.",
+  "Checked hourly. “Publish when ready” allows routine updates to go live; “Show me first” keeps the draft private until you approve it.": "Es revisa cada hora. «Publica-ho quan estigui a punt» permet publicar actualitzacions habituals; «Ensenya-m’ho primer» manté l’esborrany privat fins que l’aprovis.",
+  "Your draft stays on this device until you submit it in GitHub.": "L’esborrany es queda en aquest dispositiu fins que l’enviïs a GitHub.",
+  "Submit it to your private inbox so the website can be updated.": "Envia-ho a la teva bústia privada per actualitzar la pàgina web.",
+  "You are offline. Your draft is saved; send it when you reconnect.": "No tens connexió. L’esborrany està desat; envia’l quan et tornis a connectar.",
+  "This note is long. Copy the text below, then paste it into the inbox form.": "Aquesta nota és llarga. Copia el text de sota i enganxa’l al formulari de la bústia.",
+  "GitHub opened. Attach photos there and submit the update. Nothing is sent until you submit.": "GitHub obert. Adjunta-hi les fotos i envia l’actualització. No s’envia res fins que confirmis l’enviament."
 }
